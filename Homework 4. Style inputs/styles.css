@@ -26,29 +26,34 @@ label {
   border-radius: 8px;
   outline: none;
   outline-offset: 2px;
-  transition: outline-color 0.2s ease, outline-offset 0.2s ease;
-}
-
-.input:focus-visible {
-  outline: 3px solid rgba(22, 163, 74, 0.9);
 }
 
 .input-primary {
   background-color: #16a34a;
   color: white;
-}
+  transition: outline-color 0.2s ease, outline-offset 0.2s ease;
 
-.input-primary::placeholder {
-  color: #dcfce7;
+  &::placeholder {
+    color: #dcfce7;
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba(22, 163, 74, 0.9);
+  }
 }
 
 .input-secondary {
   background-color: #e5e7eb;
   color: #111827;
-}
+  transition: outline-color 0.2s ease, outline-offset 0.2s ease;
 
-.input-secondary::placeholder {
-  color: #6b7280;
+  &::placeholder {
+    color: #6b7280;
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba(107, 114, 128, 0.9);
+  }
 }
 
 .input-small {
